@@ -1,13 +1,50 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 <head>
   <meta charset="utf-8">
   <title>ChatApp</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
 <body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" aria-label="Thirteenth navbar example">
+    <div class="container-fluid">
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11" aria-controls="navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="navbar-collapse d-lg-flex collapse" id="navbarsExample11">
+        <a class="navbar-brand col-lg-3 me-0" href="#">wink.et</a>
+        <ul class="navbar-nav col-lg-6 justify-content-lg-center">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Theme</a>
+            <ul class="dropdown-menu">
+              <li><button class="dropdown-item" onclick="dark()">Dark</button></li>
+              <li><button class="dropdown-item" onclick="light()">Light</button></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="d-lg-flex col-lg-3 justify-content-lg-end">
+          <button class="btn btn-primary">Sign In</button>
+        </div>
+      </div>
+    </div>
+  </nav>
   <app-root></app-root>
 </body>
+<script>
+  function light () {
+    document.documentElement.setAttribute("data-bs-theme", "light");
+  }
+
+  function dark () {
+    document.documentElement.setAttribute("data-bs-theme", "dark");
+  }
+</script>
 </html>
