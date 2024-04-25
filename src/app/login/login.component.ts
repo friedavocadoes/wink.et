@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import 'bootstrap';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -10,5 +11,9 @@ import 'bootstrap';
   styleUrl: './login.component.scss'
 })
 export class LoginComponent {
+  constructor(private router: Router) { }
 
+  gotochat() {
+    this.router.navigate(['/chat']); // Navigate to login on button click
+  }
 }

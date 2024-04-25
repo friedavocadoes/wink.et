@@ -1,0 +1,52 @@
+�   .editorconfig
+�   .gitignore
+�   angular.json
+�   package-lock.json
+�   package.json
+�   README.md
+�   tree.txt
+�   tsconfig.app.json
+�   tsconfig.json
+�   tsconfig.spec.json
+         
++---src
+    �   favicon.ico
+    �   index.html
+    �   main.ts
+    �   styles.scss
+    �   
+    +---app
+    �   �   app.component.html
+    �   �   app.component.scss
+    �   �   app.component.spec.ts
+    �   �   app.component.ts
+    �   �   app.config.ts
+    �   �   app.routes.ts
+    �   �   
+    �   +---chat
+    �   �       chat.component.html
+    �   �       chat.component.scss
+    �   �       chat.component.spec.ts
+    �   �       chat.component.ts
+    �   �       
+    �   +---home
+    �   �       home.component.html
+    �   �       home.component.scss
+    �   �       home.component.spec.ts
+    �   �       home.component.ts
+    �   �       
+    �   +---login
+    �   �       login.component.html
+    �   �       login.component.scss
+    �   �       login.component.spec.ts
+    �   �       login.component.ts
+    �   �       
+    �   +---signup
+    �           signup.component.html
+    �           signup.component.scss
+    �           signup.component.spec.ts
+    �           signup.component.ts
+    �           
+    +---assets
+            .gitkeep
+            
