@@ -1,32 +1,22 @@
-<div class="d-flex align-items-center py-4 bg-body-tertiary watermelon">
-    <main class="form-signin w-100 m-auto">
-      <form>
-          
-        <h1 class="h2 mb-3 fw-normal text-center sign-up-edit" >Sign Up</h1>
-    
-        <div class="form-floating">
-          <input type="nickname" class="form-control" id="floatingInput" placeholder="yourname">
-          <label for="floatingInput">Nickname</label>
+<div class="container mt-5 d-flex justify-content-center">
+  <div class="card w-50">
+    <h2 class="card-header text-center">wink.et - Sign Up</h2>
+    <div class="card-body">
+      <form action="/login">
+        <div class="form-group mb-3">
+          <label for="signupUsername" class="form-label">Username</label>
+          <input type="text" class="form-control" id="signupUsername" name="signupUsername" required>
         </div>
-        <div class="form-floating">
-          <input type="username" class="form-control" id="floatingInput" placeholder="friedavocadoes">
-          <label for="floatingInput">Username</label>
+        <div class="form-group mb-3">
+          <label for="signupEmail" class="form-label">Email Address</label>
+          <input type="email" class="form-control" id="signupEmail"  name="signupEmail" required>
         </div>
-        <div class="form-floating">
-          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-          <label for="floatingInput">Email address</label>
+        <div class="form-group mb-3">
+          <label for="signupPassword" class="form-label">Password</label>
+          <input type="password" class="form-control" id="signupPassword" name="signupPassword" required>
         </div>
-        <div class="form-floating">
-          <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-          <label for="floatingPassword">Password</label>
-        </div>
-    
-        <div class="form-floating center text-center">
-          <a href="/login">Have an Account?</a>
-        </div>
-        <button class="btn btn-primary py-2 sign-button" type="submit">Let's Go</button>
-        
-        
+        <button type="submit" class="btn btn-primary">Sign Up</button>
       </form>
-    </main>
-    </div>  
+    </div>
+  </div>
+</div>

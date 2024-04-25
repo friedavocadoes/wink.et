@@ -1,30 +1,18 @@
- 
-<div class="d-flex align-items-center py-4 bg-body-tertiary watermelon">
-  <main class="form-signin w-100 m-auto">
-    <form>
-        
-      <h1 class="h3 mb-3 fw-normal" style="text-align: center ;">SIGN IN</h1>
-      <div class="form-floating">
-        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required="true">
-        <label for="floatingInput">Email address</label>
-      </div>
-      <div class="form-floating">
-        <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required="true">
-        <label for="floatingPassword">Password</label>
-      </div>
-  
-      <div class="form-check text-start my-3">
-        <input class="form-check-input" type="checkbox" value="remember-me" id="flexCheckDefault">
-        <label class="form-check-label" for="flexCheckDefault">
-          Remember me
-        </label>
-      </div>
-
-      <div style="margin-bottom: 10px;">
-        <a href="/signup">Sign up instead?</a>
-      </div>
-      <button class="btn btn-primary w-100 py-2" type="submit" (click)="gotochat()">Sign In</button>
-      
-    </form>
-  </main>
-  </div>  
+<div class="container mt-5 d-flex justify-content-center">
+  <div class="card w-50">
+    <h2 class="card-header text-center">wink.et - Login</h2>
+    <div class="card-body">
+      <form action="/chat">
+        <div class="form-group mb-3">
+          <label for="username" class="form-label">Username</label>
+          <input type="text" class="form-control" id="username"  name="username" required>
+        </div>
+        <div class="form-group mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" class="form-control" id="password"  name="password" required>
+        </div>
+        <button type="submit" class="btn btn-primary" onclick="gotochat()">Login</button>
+      </form>
+    </div>
+  </div>
+</div>
