@@ -5,6 +5,8 @@ import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { HomeComponent } from './home/home.component';
 import { Router } from '@angular/router';
+import { NgForm } from '@angular/forms';
+import { NgModel } from '@angular/forms';
 
 
 
